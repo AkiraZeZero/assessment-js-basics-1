@@ -43,15 +43,13 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 // CODE HERE
 
 const answers = []
-const big = answers.push("big")
-const small = answers.push("small")
-
-for (let i = 1; i < 101; ++i){
-  console.log(+i);
-} 
-
-// if (i > 101) {
-  // console.log(big)
-// } if else (i >= 101) {
-  // console.log(small)
-// }
+//for as long as this condition is true
+for (let i = 0; i < bigOrSmallArray.length; ++i){
+  console.log(bigOrSmallArray[i]);
+  if (bigOrSmallArray[i] > 100) {
+    answers.push("big")
+  } else {
+    answers.push("small")
+  }
+}
+console.log(answers)
